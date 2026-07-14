@@ -1,37 +1,19 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
-  >
-
-  <title>Apartment Game</title>
-
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+<title>Apartment Game</title>
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <canvas id="gameCanvas"></canvas>
-
-  <div id="hud">
-    <div id="message">Loading apartment...</div>
-
-    <div id="crosshair"></div>
-
-    <div id="movePad" class="controlPad">
-      <div id="moveStick" class="controlStick"></div>
-    </div>
-
-    <div id="lookPad" class="controlPad">
-      <div id="lookStick" class="controlStick"></div>
-    </div>
-  </div>
-
-  <script src="https://cdn.babylonjs.com/babylon.js"></script>
-
-  <script type="module" src="js/main.js"></script>
+<canvas id="gameCanvas"></canvas>
+<div id="hud">
+  <div id="message">Drag to look. Tap the floor to walk.</div>
+  <div id="crosshair"></div>
+  <div id="tapMarker"></div>
+</div>
+<script src="https://cdn.babylonjs.com/babylon.js"></script>
+<script type="module" src="js/main.js"></script>
 </body>
 </html>
