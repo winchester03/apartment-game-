@@ -1,1 +1,95 @@
-    js/main.js
+html,
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    touch-action: none;
+    user-select: none;
+    font-family: Arial, sans-serif;
+}
+
+#gameCanvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    touch-action: none;
+}
+
+#hud {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+}
+
+#message {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 16px;
+    background: rgba(0,0,0,.65);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+
+#crosshair {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 18px;
+    height: 18px;
+    transform: translate(-50%,-50%);
+}
+
+#crosshair::before,
+#crosshair::after {
+    content: "";
+    position: absolute;
+    background: white;
+}
+
+#crosshair::before {
+    width: 18px;
+    height: 2px;
+    top: 8px;
+}
+
+#crosshair::after {
+    width: 2px;
+    height: 18px;
+    left: 8px;
+}
+
+.controlPad {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.15);
+    bottom: 25px;
+    pointer-events: none;
+}
+
+#movePad {
+    left: 20px;
+}
+
+#lookPad {
+    right: 20px;
+}
+
+.controlStick {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    left: 43px;
+    top: 43px;
+    border-radius: 50%;
+    background: rgba(0,150,255,.25);
+    border: 1px solid rgba(0,170,255,.6);
+}
